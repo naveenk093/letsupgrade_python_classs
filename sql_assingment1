@@ -1,0 +1,8 @@
+Using SQL, create a database for a simple todo list program that has the following columns: task_id (primary key), task_name, description, and is_completed
+
+CREATE TABLE tasks (
+task_id SERIAL PRIMARY KEY,
+task_name VARCHAR(255),
+description TEXT,
+is_completed BOOLEAN DEFAULT false
+);
